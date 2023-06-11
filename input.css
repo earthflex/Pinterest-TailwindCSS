@@ -29,10 +29,10 @@
     @apply block;
 }
 
-img {
-    @apply break-inside-avoid rounded-[14px] mb-3 w-full cursor-zoom-in;
-}
 /* .box:hover img:not(:hover) {
     @apply filter grayscale ease-linear duration-300
 } */
 
+.mask {
+    @apply break-inside-avoid relative overflow-hidden rounded-[14px] mb-3 w-full cursor-zoom-in;
+}

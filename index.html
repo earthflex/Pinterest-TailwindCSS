@@ -11,38 +11,40 @@
 </head>
 
 <body>
-    <header class="bg-white border-b-2">
+    <header class="bg-white fixed top-0 left-0 right-0 z-10">
         <div class="mx-auto px-4">
-            <div class="flex items-center gap-2 h-[80px]">
-                <a href="#" class="btn flex w-[48px] btn-focus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                        <g clip-path="url(#clip0_1544_1691)">
-                            <path
-                                d="M0 12.0596C0 17.1826 3.211 21.5566 7.73 23.2776C7.62 22.3406 7.503 20.7956 7.755 19.7116C7.972 18.7796 9.156 13.7736 9.156 13.7736C9.156 13.7736 8.799 13.0586 8.799 11.9996C8.799 10.3396 9.761 9.09957 10.96 9.09957C11.98 9.09957 12.472 9.86457 12.472 10.7816C12.472 11.8066 11.819 13.3386 11.482 14.7596C11.201 15.9486 12.079 16.9186 13.251 16.9186C15.374 16.9186 17.007 14.6796 17.007 11.4476C17.007 8.58657 14.951 6.58757 12.016 6.58757C8.618 6.58757 6.623 9.13657 6.623 11.7716C6.623 12.7986 7.018 13.8986 7.512 14.4976C7.55412 14.5428 7.58387 14.5981 7.59841 14.6582C7.61295 14.7183 7.61177 14.7811 7.595 14.8406C7.504 15.2186 7.302 16.0296 7.263 16.1956C7.21 16.4136 7.09 16.4606 6.863 16.3546C5.371 15.6606 4.439 13.4796 4.439 11.7276C4.439 7.95857 7.176 4.49857 12.331 4.49857C16.475 4.49857 19.696 7.45157 19.696 11.3976C19.696 15.5146 17.101 18.8286 13.497 18.8286C12.286 18.8286 11.149 18.1986 10.759 17.4556C10.759 17.4556 10.16 19.7376 10.015 20.2956C9.733 21.3796 8.951 22.7516 8.466 23.5306C9.584 23.8746 10.77 24.0596 12 24.0596C18.627 24.0596 24 18.6866 24 12.0596C24 5.43257 18.627 0.0595703 12 0.0595703C5.373 0.0595703 0 5.43257 0 12.0596Z"
-                                fill="#E60023" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1544_1691">
-                                <rect width="24" height="24" fill="white" transform="translate(0 0.0595703)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-                <div class="flex sm:hidden btn px-4 gap-2">
-                    <div class="font-normal">หน้าหลัก</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                        <g clip-path="url(#clip0_1546_110660)">
-                            <path
-                                d="M6 9.75003L0.33 4.14503C-0.11 3.71503 -0.11 3.01003 0.33 2.57503C0.77 2.14003 1.48 2.14003 1.92 2.57503L6 6.60503L10.08 2.57503C10.52 2.14003 11.23 2.14003 11.67 2.57503C12.11 3.01003 12.11 3.71503 11.67 4.14503L6 9.75003Z"
-                                fill="black" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1546_110660">
-                                <rect width="12" height="12" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
+            <div class="flex items-center justify-between gap-2 h-[80px]">
+               <div class="flex">
+                    <a href="#" class="btn flex w-[48px] btn-focus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_1544_1691)">
+                                <path
+                                    d="M0 12.0596C0 17.1826 3.211 21.5566 7.73 23.2776C7.62 22.3406 7.503 20.7956 7.755 19.7116C7.972 18.7796 9.156 13.7736 9.156 13.7736C9.156 13.7736 8.799 13.0586 8.799 11.9996C8.799 10.3396 9.761 9.09957 10.96 9.09957C11.98 9.09957 12.472 9.86457 12.472 10.7816C12.472 11.8066 11.819 13.3386 11.482 14.7596C11.201 15.9486 12.079 16.9186 13.251 16.9186C15.374 16.9186 17.007 14.6796 17.007 11.4476C17.007 8.58657 14.951 6.58757 12.016 6.58757C8.618 6.58757 6.623 9.13657 6.623 11.7716C6.623 12.7986 7.018 13.8986 7.512 14.4976C7.55412 14.5428 7.58387 14.5981 7.59841 14.6582C7.61295 14.7183 7.61177 14.7811 7.595 14.8406C7.504 15.2186 7.302 16.0296 7.263 16.1956C7.21 16.4136 7.09 16.4606 6.863 16.3546C5.371 15.6606 4.439 13.4796 4.439 11.7276C4.439 7.95857 7.176 4.49857 12.331 4.49857C16.475 4.49857 19.696 7.45157 19.696 11.3976C19.696 15.5146 17.101 18.8286 13.497 18.8286C12.286 18.8286 11.149 18.1986 10.759 17.4556C10.759 17.4556 10.16 19.7376 10.015 20.2956C9.733 21.3796 8.951 22.7516 8.466 23.5306C9.584 23.8746 10.77 24.0596 12 24.0596C18.627 24.0596 24 18.6866 24 12.0596C24 5.43257 18.627 0.0595703 12 0.0595703C5.373 0.0595703 0 5.43257 0 12.0596Z"
+                                    fill="#E60023" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1544_1691">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.0595703)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div class="flex sm:hidden btn px-4 gap-2">
+                        <div class="font-normal">หน้าหลัก</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <g clip-path="url(#clip0_1546_110660)">
+                                <path
+                                    d="M6 9.75003L0.33 4.14503C-0.11 3.71503 -0.11 3.01003 0.33 2.57503C0.77 2.14003 1.48 2.14003 1.92 2.57503L6 6.60503L10.08 2.57503C10.52 2.14003 11.23 2.14003 11.67 2.57503C12.11 3.01003 12.11 3.71503 11.67 4.14503L6 9.75003Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1546_110660">
+                                    <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+               </div>
                 <div class="hidden sm:flex btn active text-white px-4 gap-2">
                     <div class="font-normal">หน้าหลัก</div>
                 </div>
@@ -79,99 +81,218 @@
                         class="bg-[#e9e9e9] w-full rounded-full h-[48px] pl-10 px-4 placeholder:text-[#757575] focus:outline-none focus:ring-4  focus:ring-[rgb(0 132 255 / 50%)]"
                         placeholder="Search" type="search">
                 </div>
-                <div class="sm:hidden relative tooltip btn flex w-[48px] btn-focus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                        <g clip-path="url(#clip0_1546_110662)">
-                            <path
-                                d="M10 16.105C6.69 16.105 4 13.415 4 10.105C4 6.79498 6.69 4.10498 10 4.10498C13.31 4.10498 16 6.79498 16 10.105C16 13.415 13.31 16.105 10 16.105ZM23.12 18.985L18.86 14.725C19.6122 13.3014 20.0036 11.715 20 10.105C20 4.58498 15.52 0.10498 10 0.10498C4.48 0.10498 0 4.58498 0 10.105C0 15.625 4.48 20.105 10 20.105C11.67 20.105 13.24 19.695 14.62 18.965L18.88 23.225C19.4425 23.7868 20.205 24.1023 21 24.1023C21.795 24.1023 22.5575 23.7868 23.12 23.225C23.6818 22.6625 23.9974 21.9 23.9974 21.105C23.9974 20.31 23.6818 19.5475 23.12 18.985Z"
-                                fill="#5F5F5F" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1546_110662">
-                                <rect width="24" height="24" fill="white" transform="translate(0 0.10498)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <span class="tooltip-text">ค้นหา</span>
-                </div>
-                <div class="relative tooltip btn flex w-[48px] btn-focus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <g clip-path="url(#clip0_1544_1708)">
-                            <path
-                                d="M12 24C10.34 24 9 22.66 9 21H15C15 22.66 13.66 24 12 24ZM19 13.17C20.58 14.69 21.67 16.72 22 19H2C2.33 16.72 3.42 14.69 5 13.17V7C5 3.13 8.13 0 12 0C15.87 0 19 3.13 19 7V13.17Z"
-                                fill="#5F5F5F" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1544_1708">
-                                <rect width="24" height="24" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <span class="tooltip-text">การแจ้งเตือน</span>
-                </div>
-                <div class="relative tooltip btn flex w-[48px] btn-focus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <g clip-path="url(#clip0_1544_1711)">
-                            <path
-                                d="M18 12.5C17.803 12.4999 17.6078 12.4611 17.4258 12.3856C17.2438 12.3101 17.0784 12.1995 16.9391 12.0602C16.7998 11.9208 16.6894 11.7553 16.614 11.5733C16.5387 11.3912 16.4999 11.196 16.5 10.999C16.5001 10.802 16.5389 10.6068 16.6144 10.4248C16.6899 10.2428 16.8005 10.0774 16.9398 9.93813C17.0792 9.79884 17.2447 9.68837 17.4267 9.61303C17.6088 9.53768 17.804 9.49893 18.001 9.499C18.399 9.49913 18.7806 9.65735 19.0619 9.93884C19.3432 10.2203 19.5011 10.602 19.501 11C19.5009 11.398 19.3427 11.7796 19.0612 12.0609C18.7797 12.3422 18.398 12.5001 18 12.5ZM12 12.5C11.602 12.4999 11.2204 12.3417 10.9391 12.0602C10.6578 11.7787 10.4999 11.397 10.5 10.999C10.5001 10.601 10.6583 10.2194 10.9398 9.93813C11.2213 9.65683 11.603 9.49887 12.001 9.499C12.399 9.49913 12.7806 9.65735 13.0619 9.93884C13.3432 10.2203 13.5011 10.602 13.501 11C13.5009 11.398 13.3427 11.7796 13.0612 12.0609C12.7797 12.3422 12.398 12.5001 12 12.5ZM6 12.5C5.60204 12.4999 5.22044 12.3417 4.93913 12.0602C4.65783 11.7787 4.49987 11.397 4.5 10.999C4.50013 10.601 4.65835 10.2194 4.93984 9.93813C5.22133 9.65683 5.60304 9.49887 6.001 9.499C6.39896 9.49913 6.78056 9.65735 7.06187 9.93884C7.34317 10.2203 7.50113 10.602 7.501 11C7.50087 11.398 7.34265 11.7796 7.06116 12.0609C6.77967 12.3422 6.39796 12.5001 6 12.5ZM12 0C5.925 0 1 4.925 1 11C1 13.653 1.94 16.086 3.504 17.986L2 24L7.336 20.951C8.79422 21.6405 10.387 21.9988 12 22C18.075 22 23 17.075 23 11C23 4.925 18.075 0 12 0Z"
-                                fill="#5F5F5F" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_1544_1711">
-                                <rect width="24" height="24" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <span class="tooltip-text ">ข้อความ</span>
-                </div>
+               <div class="flex">
+                    <div class="sm:hidden relative tooltip btn flex w-[48px] btn-focus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_1546_110662)">
+                                <path
+                                    d="M10 16.105C6.69 16.105 4 13.415 4 10.105C4 6.79498 6.69 4.10498 10 4.10498C13.31 4.10498 16 6.79498 16 10.105C16 13.415 13.31 16.105 10 16.105ZM23.12 18.985L18.86 14.725C19.6122 13.3014 20.0036 11.715 20 10.105C20 4.58498 15.52 0.10498 10 0.10498C4.48 0.10498 0 4.58498 0 10.105C0 15.625 4.48 20.105 10 20.105C11.67 20.105 13.24 19.695 14.62 18.965L18.88 23.225C19.4425 23.7868 20.205 24.1023 21 24.1023C21.795 24.1023 22.5575 23.7868 23.12 23.225C23.6818 22.6625 23.9974 21.9 23.9974 21.105C23.9974 20.31 23.6818 19.5475 23.12 18.985Z"
+                                    fill="#5F5F5F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1546_110662">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.10498)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="tooltip-text">ค้นหา</span>
+                    </div>
+                    <div class="relative tooltip btn flex w-[48px] btn-focus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_1544_1708)">
+                                <path
+                                    d="M12 24C10.34 24 9 22.66 9 21H15C15 22.66 13.66 24 12 24ZM19 13.17C20.58 14.69 21.67 16.72 22 19H2C2.33 16.72 3.42 14.69 5 13.17V7C5 3.13 8.13 0 12 0C15.87 0 19 3.13 19 7V13.17Z"
+                                    fill="#5F5F5F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1544_1708">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="tooltip-text">การแจ้งเตือน</span>
+                    </div>
+                    <div class="relative tooltip btn flex w-[48px] btn-focus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_1544_1711)">
+                                <path
+                                    d="M18 12.5C17.803 12.4999 17.6078 12.4611 17.4258 12.3856C17.2438 12.3101 17.0784 12.1995 16.9391 12.0602C16.7998 11.9208 16.6894 11.7553 16.614 11.5733C16.5387 11.3912 16.4999 11.196 16.5 10.999C16.5001 10.802 16.5389 10.6068 16.6144 10.4248C16.6899 10.2428 16.8005 10.0774 16.9398 9.93813C17.0792 9.79884 17.2447 9.68837 17.4267 9.61303C17.6088 9.53768 17.804 9.49893 18.001 9.499C18.399 9.49913 18.7806 9.65735 19.0619 9.93884C19.3432 10.2203 19.5011 10.602 19.501 11C19.5009 11.398 19.3427 11.7796 19.0612 12.0609C18.7797 12.3422 18.398 12.5001 18 12.5ZM12 12.5C11.602 12.4999 11.2204 12.3417 10.9391 12.0602C10.6578 11.7787 10.4999 11.397 10.5 10.999C10.5001 10.601 10.6583 10.2194 10.9398 9.93813C11.2213 9.65683 11.603 9.49887 12.001 9.499C12.399 9.49913 12.7806 9.65735 13.0619 9.93884C13.3432 10.2203 13.5011 10.602 13.501 11C13.5009 11.398 13.3427 11.7796 13.0612 12.0609C12.7797 12.3422 12.398 12.5001 12 12.5ZM6 12.5C5.60204 12.4999 5.22044 12.3417 4.93913 12.0602C4.65783 11.7787 4.49987 11.397 4.5 10.999C4.50013 10.601 4.65835 10.2194 4.93984 9.93813C5.22133 9.65683 5.60304 9.49887 6.001 9.499C6.39896 9.49913 6.78056 9.65735 7.06187 9.93884C7.34317 10.2203 7.50113 10.602 7.501 11C7.50087 11.398 7.34265 11.7796 7.06116 12.0609C6.77967 12.3422 6.39796 12.5001 6 12.5ZM12 0C5.925 0 1 4.925 1 11C1 13.653 1.94 16.086 3.504 17.986L2 24L7.336 20.951C8.79422 21.6405 10.387 21.9988 12 22C18.075 22 23 17.075 23 11C23 4.925 18.075 0 12 0Z"
+                                    fill="#5F5F5F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1544_1711">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="tooltip-text ">ข้อความ</span>
+                    </div>
+               </div>
             </div>
         </div>
     </header>
-    <main>
+    <main class="mt-[100px]">
         <div class="container my-10 px-4">
             <div class="box columns-2 sm:columns-3 md:columns-4 lg:columns-5 xl:columns-6 2xl:columns-7 gap-4">
-                <img src="https://i.pinimg.com/564x/d5/37/7e/d5377e73a16e7238ff4e869080c48dfa.jpg">
-                <img src="https://i.pinimg.com/564x/5a/e3/43/5ae3434ccc760f01e7fa81cd1e21fa22.jpg">
-                <img src="https://i.pinimg.com/474x/2a/1a/ec/2a1aec7cc1a21775f7c31c1c069a53d6.jpg">
-                <img src="https://i.pinimg.com/474x/83/51/c0/8351c0752567da4379dfe44c6f765993.jpg">
-                <img src="https://i.pinimg.com/736x/dd/bb/41/ddbb41784b8e474e03a2c6e1ce59bf35.jpg">
-                <img src="https://i.pinimg.com/736x/bb/91/3b/bb913b1dfa64b2b5d7178e563e836193.jpg">
-                <img src="https://i.pinimg.com/564x/69/02/65/6902657dae823f0c34ed5d9206485299.jpg">
-                <img src="https://i.pinimg.com/736x/95/64/08/9564084ee95adfc0669787746858828b.jpg">
-                <img src="https://i.pinimg.com/564x/f7/35/50/f73550c327523c35bed7e65de8025f7c.jpg">
-                <img src="https://i.pinimg.com/564x/c1/c4/39/c1c439b4a19b7fc83274c0453f7366f1.jpg">
-                <img src="https://i.pinimg.com/736x/f0/df/90/f0df900ec3c517316bd70a0aabf14ef5.jpg">
-                <img src="https://i.pinimg.com/474x/e9/fe/0b/e9fe0bdcfceacc4c0b234f226bd008c4.jpg">
-                <img src="https://i.pinimg.com/564x/24/7a/f1/247af18eb112e381219deb8fef7038b1.jpg">
-                <img src="https://i.pinimg.com/474x/c8/76/36/c87636c633fd0a685c8ff015ba214840.jpg">
-                <img src="https://i.pinimg.com/474x/f6/69/1b/f6691b1323e3bb0d78df34a3763c3eec.jpg">
-                <img src="https://i.pinimg.com/474x/12/97/a8/1297a834171f5fcf063607f32b4cb45d.jpg">
-                <img src="https://i.pinimg.com/474x/b7/7d/0d/b77d0dea90d8acdbdcad8ccbcbf837c4.jpg">
-                <img src="https://i.pinimg.com/474x/73/f5/50/73f55086e479ef118af04784f0807071.jpg">
-                <img src="https://i.pinimg.com/564x/f4/0b/c3/f40bc37d8a4df59743727e0dbead0516.jpg">
-                <img src="https://i.pinimg.com/474x/2b/af/00/2baf00a7eea5629d8a559f9a93803ce3.jpg">
-                <img src="https://i.pinimg.com/736x/f4/75/f2/f475f268ec94c7d7ea93d8a47b28a5e4.jpg">
-                <img src="https://i.pinimg.com/564x/3b/5b/03/3b5b03f1467a207d6fe76e39234aed87.jpg">
-                <img src="https://i.pinimg.com/736x/e3/a1/8b/e3a18bce57a865fedaabcdc4d2dda4cf.jpg">
-                <img src="https://i.pinimg.com/736x/ee/ed/22/eeed222ad1c94ac792fa0bcb62a78e5a.jpg">
-                <img src="https://i.pinimg.com/736x/87/bf/90/87bf9006c2d750cc4b7418724355bfe5.jpg">
-                <img src="https://i.pinimg.com/736x/45/c7/00/45c7009dae8c19aa0ca2806ed9efef94.jpg">
-                <img src="https://i.pinimg.com/564x/ee/6b/5f/ee6b5f3584a83c4d616869f90a650f39.jpg">
-                <img src="https://i.pinimg.com/564x/46/64/01/4664015190f5b216b9390a43767b889a.jpg">
-                <img src="https://i.pinimg.com/564x/09/38/8b/09388b108210ff716b757315f7c33fd0.jpg">
-                <img src="https://i.pinimg.com/736x/3a/2c/f5/3a2cf5be1bad180c5246f867848027d8.jpg">
-                <img src="https://i.pinimg.com/736x/d7/be/9e/d7be9e9e8ab9e61c2368ca38d9c1242e.jpg">
-                <img src="https://i.pinimg.com/564x/95/2b/d4/952bd4a3299d90ae3294e22d0ed1f122.jpg">
-                <img src="https://i.pinimg.com/736x/07/3a/64/073a645bf02b8ad63c828a903d5983ea.jpg">
-                <img src="https://i.pinimg.com/736x/6a/e2/52/6ae2525a12d63cf226298be0618e1154.jpg">
-                <img src="https://i.pinimg.com/736x/23/16/74/231674f7dd9763f5aad622f07813e12a.jpg">
-                <img src="https://i.pinimg.com/736x/e0/36/35/e03635925d59447bbe65928971d4fd04.jpg">
-                <img src="https://i.pinimg.com/736x/60/40/fb/6040fbefb63132ed29b0c89740f23340.jpg">
-                <img src="https://i.pinimg.com/736x/a8/38/b9/a838b9a3a35b21bb09ea62d8ac841f10.jpg">
-                <img src="https://i.pinimg.com/564x/3b/de/e7/3bdee72df44e61899201bf7282c9c4f8.jpg">
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/d5/37/7e/d5377e73a16e7238ff4e869080c48dfa.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/5a/e3/43/5ae3434ccc760f01e7fa81cd1e21fa22.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/2a/1a/ec/2a1aec7cc1a21775f7c31c1c069a53d6.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/83/51/c0/8351c0752567da4379dfe44c6f765993.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/dd/bb/41/ddbb41784b8e474e03a2c6e1ce59bf35.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/8d/30/fd/8d30fdfcbb812d8878fe15218521530d.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/69/02/65/6902657dae823f0c34ed5d9206485299.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/95/64/08/9564084ee95adfc0669787746858828b.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/f7/35/50/f73550c327523c35bed7e65de8025f7c.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/c1/c4/39/c1c439b4a19b7fc83274c0453f7366f1.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/f0/df/90/f0df900ec3c517316bd70a0aabf14ef5.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/e9/fe/0b/e9fe0bdcfceacc4c0b234f226bd008c4.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/24/7a/f1/247af18eb112e381219deb8fef7038b1.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/c8/76/36/c87636c633fd0a685c8ff015ba214840.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/f6/69/1b/f6691b1323e3bb0d78df34a3763c3eec.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/12/97/a8/1297a834171f5fcf063607f32b4cb45d.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/b7/7d/0d/b77d0dea90d8acdbdcad8ccbcbf837c4.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/73/f5/50/73f55086e479ef118af04784f0807071.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/f4/0b/c3/f40bc37d8a4df59743727e0dbead0516.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/474x/2b/af/00/2baf00a7eea5629d8a559f9a93803ce3.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/f4/75/f2/f475f268ec94c7d7ea93d8a47b28a5e4.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/3b/5b/03/3b5b03f1467a207d6fe76e39234aed87.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/e3/a1/8b/e3a18bce57a865fedaabcdc4d2dda4cf.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/ee/ed/22/eeed222ad1c94ac792fa0bcb62a78e5a.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/87/bf/90/87bf9006c2d750cc4b7418724355bfe5.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/45/c7/00/45c7009dae8c19aa0ca2806ed9efef94.jpg">
+
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/ee/6b/5f/ee6b5f3584a83c4d616869f90a650f39.jpg">
+
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/46/64/01/4664015190f5b216b9390a43767b889a.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/09/38/8b/09388b108210ff716b757315f7c33fd0.jpg">
+
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/3a/2c/f5/3a2cf5be1bad180c5246f867848027d8.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/d7/be/9e/d7be9e9e8ab9e61c2368ca38d9c1242e.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/95/2b/d4/952bd4a3299d90ae3294e22d0ed1f122.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/07/3a/64/073a645bf02b8ad63c828a903d5983ea.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/6a/e2/52/6ae2525a12d63cf226298be0618e1154.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/23/16/74/231674f7dd9763f5aad622f07813e12a.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/e0/36/35/e03635925d59447bbe65928971d4fd04.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/60/40/fb/6040fbefb63132ed29b0c89740f23340.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/a8/38/b9/a838b9a3a35b21bb09ea62d8ac841f10.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/3b/de/e7/3bdee72df44e61899201bf7282c9c4f8.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/f5/f9/29/f5f929c87294db2faf8217342a9d4eff.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/5e/01/fd/5e01fdcb4dcf8bf657a8ea0d5d382561.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/59/f7/42/59f74204eaa3c964382e3f06705f0b37.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/6a/3c/1c/6a3c1c9138590f8a2732e0f63b6e50b9.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/77/d6/4c/77d64cd7090961f2f764a0b6a0e14895.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/5f/ff/35/5fff358b33e6ef6e6d6d59c8fe425bd8.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/fd/37/3f/fd373fa6f93b4a8cca3aaf94f1dcda40.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/f6/d7/c3/f6d7c36dfe39ca13e065e166210fb17f.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/23/0e/c1/230ec137f169472aa8f4185e7de06bad.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/564x/1e/be/d5/1ebed52ce51440bf80bd10dc24ed10c8.jpg">
+                </div>
+                <div class="mask">
+                    <img src="https://i.pinimg.com/736x/4a/6a/19/4a6a19e7133d41d982b3d79d582ca636.jpg">
+                </div>
             </div>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="/animate.js"></script>
 </body>
 
 </html>
