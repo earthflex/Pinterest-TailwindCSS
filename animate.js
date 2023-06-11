@@ -26,36 +26,62 @@ logoBtn.addEventListener('mouseout', function () {
     });
 });
 
-gsap.registerPlugin(ScrollTrigger);
-
-let masks = document.querySelectorAll('.mask');
-
-masks.forEach(mask => {
-    let image = mask.querySelector('img');
-    console.log(image.count)
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: mask,
-            toggleActions: "restart none none reset"
+const loadingAnimation = () => {
+    const tl = gsap.timeline({
+        onComplete: () => {
+            maskAnimation();
         }
     });
+    tl
+        .from(
+            "#loading-page svg",
+            {
+                scale: 0,
+                duration: 1,
+                ease: "elastic.out(1, 0.75)"
+            },
+            0
+        )
+        .to("#loading-page", {
+            yPercent: -100,
+            duration: 1,
+            delay:.4,
+            ease: "power2.inOut"
+        })
+};
 
-    tl.set(mask, { autoAlpha: 1 });
+gsap.registerPlugin(ScrollTrigger);
 
-    tl.from(mask, {
-        y: 80,
-        stagger: {
-            each: 1,
-            ease: "power2.inOut",
-        },
+const maskAnimation = () => {
+    const masks = document.querySelectorAll('.mask');
+
+    masks.forEach(mask => {
+        const image = mask.querySelector('img');
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: mask,
+                toggleActions: "restart none none reset"
+            }
+        });
+
+        tl.set(mask, { autoAlpha: 1 });
+        tl.from(mask, {
+            y: 80,
+            stagger: {
+                each: 1,
+                ease: "power2.inOut"
+            }
+        });
+        tl.from(image, {
+            scale: 1.2,
+            delay: -0.8,
+            stagger: {
+                each: 0.8,
+                ease: "power2.inOut"
+            },
+            ease: Power2.out
+        });
     });
-    tl.from(image, {
-        scale: 1.2,
-        delay: -.8,
-        stagger: {
-            each: .8,
-            ease: "power2.inOut",
-        },
-        ease: Power2.out
-    });
-})
+};
+
+loadingAnimation();

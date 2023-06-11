@@ -17,14 +17,14 @@
     @apply bg-black;
 }
 
-.btn-focus{
+.btn-focus {
     @apply transition duration-150 ease-out focus:scale-105
 }
 
 .tooltip-text {
     @apply hidden absolute top-full left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-2 text-xs whitespace-nowrap rounded-md;
-  }
-  
+}
+
 .tooltip:hover .tooltip-text {
     @apply block;
 }
@@ -34,5 +34,5 @@
 } */
 
 .mask {
-    @apply break-inside-avoid relative overflow-hidden rounded-[14px] mb-3 w-full;
+    @apply break-inside-avoid invisible relative overflow-hidden rounded-[14px] mb-3 w-full;
 }
