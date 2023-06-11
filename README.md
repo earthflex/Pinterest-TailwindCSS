@@ -9,4 +9,5 @@ Link ตัวอย่าง : https://pinterest-earthflex.netlify.app/
 
 ## วิธีติดตั้ง
 1. ดาวน์โหลดโปรเจคจาก GitHub Repository
-2. ```npm install && npm run build-css ```
+2. ```npm install && npm run dev-css ```
+3. ```npm run build-css ``` เพื่อ build minify ขึ้น production 

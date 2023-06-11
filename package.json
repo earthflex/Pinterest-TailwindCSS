@@ -1,12 +1,14 @@
-
 {
   "scripts": {
-    "build-css": "tailwindcss -i ./input.css -o ./dist/output.min.css --minify --watch"
+    "dev-css": "TAILWIND_MODE=watch postcss ./input.css -o ./dist/output.css --watch",
+    "build-css": "tailwindcss -i ./input.css -o ./dist/output.min.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
-
+  },
+  "dependencies": {
+    "postcss-cli": "^10.1.0"
   }
 }

@@ -34,5 +34,5 @@
 } */
 
 .mask {
-    @apply break-inside-avoid relative overflow-hidden rounded-[14px] mb-3 w-full cursor-zoom-in;
+    @apply break-inside-avoid relative overflow-hidden rounded-[14px] mb-3 w-full;
 }
