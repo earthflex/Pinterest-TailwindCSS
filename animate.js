@@ -45,7 +45,7 @@ const loadingAnimation = () => {
         .to("#loading-page", {
             yPercent: -100,
             duration: 1,
-            delay:.4,
+            delay: .4,
             ease: "power2.inOut"
         })
 };
@@ -73,14 +73,13 @@ const maskAnimation = () => {
             }
         });
         tl.from(image, {
-            scale: 1.2,
-            delay: -0.8,
+            scale: 1.1,
+            transformOrigin: 'top',
             stagger: {
-                each: 0.8,
-                ease: "power2.inOut"
+                each: 0.3,
+                ease: "power2.out"
             },
-            ease: Power2.out
-        });
+        }, '<0.2');
     });
 };
 
