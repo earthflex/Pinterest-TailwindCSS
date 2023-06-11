@@ -1,3 +1,31 @@
+const logoBtn = document.getElementById('logo-brand');
+const originalScale = 1;
+const whileTapScale = 0.8;
+
+logoBtn.addEventListener('mousedown', function () {
+    gsap.to(this, {
+        scale: whileTapScale,
+        duration: 0.2,
+        ease: "power4.out"
+    });
+});
+
+logoBtn.addEventListener('mouseup', function () {
+    gsap.to(this, {
+        scale: originalScale,
+        duration: 0.2,
+        ease: "power4.out"
+    });
+});
+
+logoBtn.addEventListener('mouseout', function () {
+    gsap.to(this, {
+        scale: originalScale,
+        duration: 0.2,
+        ease: "power4.out"
+    });
+});
+
 gsap.registerPlugin(ScrollTrigger);
 
 let masks = document.querySelectorAll('.mask');

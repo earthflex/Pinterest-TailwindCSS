@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,7 @@
     <title>Pinterest Gird Layout With TailwindCSS</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script>
-        var devServerURL = 'http://127.0.0.1:5500'; // live server vscode
+        var devServerURL = 'http://127.0.0.1:5500'; // Live Server in VScode
         if (window.location.href.indexOf(devServerURL) !== -1) {
             // ถ้าเว็บไซต์ทำงานในโหมด development
             var link = document.createElement('link');
@@ -28,9 +27,9 @@
 <body>
     <header class="bg-white fixed top-0 left-0 right-0 z-10">
         <div class="mx-auto px-4">
-            <div class="flex items-center justify-between gap-2 h-[80px]">
+            <div class="flex items-center justify-between gap-[5px] h-[80px]">
                 <div class="flex">
-                    <a href="#" class="btn flex w-[48px] btn-focus">
+                    <a id="logo-brand" href="#" class="btn flex w-[48px] btn-focus">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                             <g clip-path="url(#clip0_1544_1691)">
                                 <path
