@@ -3,30 +3,33 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply text-black;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Pro W3, Hiragino Kaku Gothic Pro, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-    }
+  html {
+    @apply text-black;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+      Helvetica, Pro W3, Hiragino Kaku Gothic Pro, Arial, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  }
 }
 
 .btn {
-    @apply hover:bg-[#E9E9E9] h-[48px] items-center justify-center rounded-full cursor-pointer;
+  @apply hover:bg-[#E9E9E9] h-[48px] items-center justify-center rounded-full cursor-pointer;
 }
 
 .btn.active {
-    @apply bg-black;
+  @apply bg-black;
 }
 
 .btn-focus {
-    @apply transition duration-150 ease-out focus:scale-105
+  @apply transition duration-150 ease-out focus:scale-105;
 }
 
 .tooltip-text {
-    @apply hidden absolute top-full left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-2 text-xs whitespace-nowrap rounded-md;
+  @apply hidden absolute top-full left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-2 text-xs whitespace-nowrap rounded-md;
 }
 
 .tooltip:hover .tooltip-text {
-    @apply block;
+  @apply block;
 }
 
 /* .box:hover img:not(:hover) {
@@ -34,5 +37,5 @@
 } */
 
 .mask {
-    @apply break-inside-avoid invisible relative overflow-hidden rounded-[14px] mb-3 w-full;
+  @apply break-inside-avoid invisible relative overflow-hidden rounded-[14px] mb-3 w-full;
 }
